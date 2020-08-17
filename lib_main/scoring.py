@@ -143,6 +143,13 @@ def workloadScoreStatuses(LeftBoard,RightBoard,CurrentNumOfTasks):
     return score
 
 
+# необходимо объединить 2 показателя в единую метрику оценки. Разработайте функцию объеденения,
+# например рачетом среднего арифметического показателей по статусам
+def unionScoring(Data):
+    data_mean = Data.groupby('assignee_id', as_index=False)[['score_value']].mean()[:]
+    return data_mean
+
+
 """[summary]
 Function for inserting data to BigQuery database
 [description]
