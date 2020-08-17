@@ -1,4 +1,5 @@
 How to run: python3 main.py
+Don't forget to fill in your credentials in lib_main/config.py
 
 To-do:
 
